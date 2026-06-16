@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get Your Opportunity to Claim a $500 Walmart Gift Card! Maximize Your Shopping Budget today." />
+    <title>Claim Your $500 Walmart Gift Card | Limited Time Offer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; }
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #fff;
+        color: #1e293b;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat', sans-serif; letter-spacing: -0.02em; }
+      img { display: block; max-width: 100%; }
+      a { text-decoration: none; color: inherit; }
+
+      /* Layout */
+      .container { max-width: 1200px; margin: 0 auto; padding: 0 1.25rem; }
+
+      /* --- HEADER --- */
+      .header {
+        position: sticky; top: 0; z-index: 100;
+        background: rgba(255,255,255,0.96);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(0,0,0,0.07);
+        padding: 0;
+      }
+      .header-inner {
+        display: flex; align-items: center; justify-content: space-between;
+        height: 64px;
+      }
+      .logo { display: flex; align-items: center; gap: 0.5rem; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.15rem; color: #0a1628; }
+      .logo-icon { width: 28px; height: 28px; background: linear-gradient(135deg, #0071CE, #1e4db7); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1rem; }
+
+      /* --- BUTTONS --- */
+      .btn {
+        display: inline-flex; align-items: center; justify-content: center;
+        font-family: 'Montserrat', sans-serif; font-weight: 800;
+        border: none; border-radius: 12px; cursor: pointer;
+        text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .btn:hover { transform: translateY(-2px); }
+      .btn-sm {
+        padding: 0.5rem 1.25rem; font-size: 0.875rem;
+        background: #0071CE; color: #fff;
+        animation: pulse-glow 2.5s ease-in-out infinite;
+      }
+      .btn-primary {
+        padding: 1rem 2rem; font-size: 1.1rem;
+        background: #0071CE; color: #fff;
+        box-shadow: 0 8px 32px rgba(0,113,206,0.35);
+        animation: pulse-glow 2s cubic-bezier(0.4,0,0.6,1) infinite;
+        border-radius: 14px;
+      }
+      .btn-yellow {
+        padding: 1.1rem 2.5rem; font-size: 1.2rem;
+        background: #FFC220; color: #0a1628;
+        box-shadow: 0 8px 40px rgba(255,194,32,0.4);
+        animation: pulse-glow-yellow 2s cubic-bezier(0.4,0,0.6,1) infinite;
+        border-radius: 14px;
+      }
+      .btn-yellow:hover { box-shadow: 0 12px 50px rgba(255,194,32,0.55); }
+      .btn-primary:hover { box-shadow: 0 12px 45px rgba(0,113,206,0.5); }
+
+      /* --- ANIMATIONS --- */
+      @keyframes pulse-glow {
+        0%,100% { box-shadow: 0 8px 32px rgba(0,113,206,0.35); }
+        50% { box-shadow: 0 8px 45px 8px rgba(0,113,206,0.5), 0 0 0 6px rgba(0,113,206,0.1); }
+      }
+      @keyframes pulse-glow-yellow {
+        0%,100% { box-shadow: 0 8px 40px rgba(255,194,32,0.4); }
+        50% { box-shadow: 0 8px 55px 8px rgba(255,194,32,0.6), 0 0 0 6px rgba(255,194,32,0.15); }
+      }
+      @keyframes float {
+        0%,100% { transform: translateY(0); }
+        50% { transform: translateY(-18px); }
+      }
+      @keyframes pulse-soft {
+        0%,100% { transform: scale(1); opacity: 0.9; }
+        50% { transform: scale(1.04); opacity: 1; }
+      }
+      @keyframes reveal-up {
+        from { opacity: 0; transform: translateY(32px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes spin-slow { to { transform: rotate(360deg); } }
+
+      .reveal-hidden { opacity: 0; transform: translateY(30px); }
+      .reveal-visible { animation: reveal-up 0.75s cubic-bezier(0.16,1,0.3,1) forwards; }
+      .float-anim { animation: float 6s ease-in-out infinite; }
+      .pulse-soft-anim { animation: pulse-soft 4s ease-in-out infinite; }
+
+      /* --- SECTION 1: HERO --- */
+      .hero-section {
+        background: linear-gradient(160deg, #ffffff 0%, #f0f7ff 50%, #fff8ec 100%);
+        padding: 5rem 0 6rem;
+      }
+      .hero-grid {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
+      }
+      .hero-badge {
+        display: inline-flex; align-items: center; gap: 0.5rem;
+        background: rgba(0,113,206,0.07); border: 1px solid rgba(0,113,206,0.2);
+        border-radius: 999px; padding: 0.35rem 1rem;
+        font-size: 0.85rem; font-weight: 600; color: #0071CE; margin-bottom: 1.5rem;
+      }
+      .hero-badge-dot {
+        width: 8px; height: 8px; border-radius: 50%; background: #0071CE;
+        animation: pulse-soft 2s ease-in-out infinite;
+      }
+      .hero-title {
+        font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900;
+        color: #0a1628; line-height: 1.1; margin-bottom: 1.25rem;
+      }
+      .hero-title span { color: #0071CE; }
+      .hero-subtitle { font-size: 1.1rem; color: #475569; line-height: 1.75; margin-bottom: 2rem; }
+      .hero-trust {
+        display: flex; gap: 1.5rem; margin-top: 1.5rem;
+        font-size: 0.85rem; font-weight: 600; color: #64748b;
+      }
+      .hero-trust-item { display: flex; align-items: center; gap: 0.4rem; }
+      .icon-green { color: #16a34a; font-size: 1rem; }
+      .icon-blue  { color: #0071CE; font-size: 1rem; }
+      .hero-img-wrap {
+        position: relative; border-radius: 20px; overflow: hidden;
+        box-shadow: 0 30px 80px rgba(0,0,0,0.18);
+        aspect-ratio: 4/3;
+      }
+      .hero-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+      .hero-img-overlay {
+        position: absolute; inset: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%);
+      }
+      .hero-img-badge {
+        position: absolute; bottom: 1.25rem; left: 1.25rem; right: 1.25rem;
+        background: rgba(255,255,255,0.93); backdrop-filter: blur(8px);
+        border-radius: 12px; padding: 0.9rem 1.25rem; text-align: center;
+        font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1rem;
+        color: #0a1628; border: 1px solid rgba(255,255,255,0.3);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      }
+
+      /* --- SECTION 2: HOW IT WORKS --- */
+      .how-section {
+        background: linear-gradient(135deg, #0a1628 0%, #1e3a7a 60%, #1e4db7 100%);
+        padding: 6rem 0; color: white; position: relative; overflow: hidden;
+      }
+      .how-blob-1 {
+        position: absolute; top: -100px; right: -100px; width: 400px; height: 400px;
+        background: rgba(0,113,206,0.25); border-radius: 50%; filter: blur(80px); pointer-events: none;
+      }
+      .how-blob-2 {
+        position: absolute; bottom: -80px; left: -80px; width: 350px; height: 350px;
+        background: rgba(255,194,32,0.12); border-radius: 50%; filter: blur(80px); pointer-events: none;
+      }
+      .how-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 2; }
+      .how-title { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; margin-bottom: 1rem; }
+      .how-subtitle { color: rgba(191,219,254,0.8); font-size: 1.1rem; margin-bottom: 3rem; }
+      .steps { display: flex; flex-direction: column; gap: 0; }
+      .step {
+        display: flex; gap: 1.5rem; position: relative;
+        padding-bottom: 2.5rem;
+      }
+      .step:last-child { padding-bottom: 0; }
+      .step-line-wrap { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+      .step-num {
+        width: 52px; height: 52px; border-radius: 50%;
+        background: rgba(255,255,255,0.1); border: 2px solid rgba(255,255,255,0.25);
+        display: flex; align-items: center; justify-content: center;
+        font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.2rem;
+        color: white; flex-shrink: 0; transition: background 0.3s;
+        position: relative; z-index: 1;
+      }
+      .step:hover .step-num { background: #0071CE; border-color: #0071CE; }
+      .step-connector {
+        width: 2px; flex: 1; background: rgba(255,255,255,0.15); margin-top: 4px;
+      }
+      .step-content h3 { font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem; }
+      .step-content p { color: rgba(191,219,254,0.75); font-size: 1rem; line-height: 1.7; }
+      .how-img-wrap { display: flex; justify-content: center; }
+      .how-img-wrap img { max-width: 400px; width: 100%; object-fit: contain; filter: drop-shadow(0 30px 60px rgba(0,0,0,0.4)); }
+
+      /* --- SECTION 3: VALUE PROP --- */
+      .value-section {
+        background: linear-gradient(160deg, #fff9f2 0%, #fff4e6 60%, #fff0e0 100%);
+        padding: 6rem 0;
+      }
+      .section-header { text-align: center; max-width: 720px; margin: 0 auto 4rem; }
+      .section-title { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; color: #0a1628; margin-bottom: 1rem; }
+      .section-subtitle { font-size: 1.1rem; color: #64748b; line-height: 1.7; }
+      .cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 3.5rem; }
+      .card {
+        background: rgba(255,255,255,0.85); border-radius: 20px;
+        padding: 2rem; display: flex; gap: 1.25rem; align-items: flex-start;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.07); transition: box-shadow 0.3s, transform 0.3s;
+        backdrop-filter: blur(8px);
+      }
+      .card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.12); transform: translateY(-3px); }
+      .card-icon {
+        width: 52px; height: 52px; flex-shrink: 0; border-radius: 14px;
+        background: white; display: flex; align-items: center; justify-content: center;
+        font-size: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      }
+      .card h3 { font-size: 1.1rem; font-weight: 800; color: #0a1628; margin-bottom: 0.4rem; }
+      .card p  { font-size: 0.95rem; color: #64748b; line-height: 1.65; }
+      .value-hero-img {
+        border-radius: 24px; overflow: hidden; max-width: 960px;
+        margin: 0 auto; box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+        position: relative;
+        aspect-ratio: 21/9;
+      }
+      .value-hero-img img { width: 100%; height: 100%; object-fit: cover; }
+      .value-hero-img-overlay {
+        position: absolute; inset: 0;
+        background: linear-gradient(to top, rgba(15,23,42,0.55) 0%, transparent 60%);
+      }
+      .value-hero-img-text {
+        position: absolute; bottom: 1.5rem; left: 2rem;
+        font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.4rem; color: white;
+      }
+
+      /* --- SECTION 4: SOCIAL PROOF --- */
+      .proof-section {
+        background: linear-gradient(160deg, #f0f0ff 0%, #f5f0ff 40%, #ffffff 100%);
+        padding: 6rem 0;
+      }
+      .stars { display: flex; align-items: center; justify-content: center; gap: 4px; margin-bottom: 1rem; }
+      .star { color: #FFC220; font-size: 1.4rem; }
+      .testimonials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 960px; margin: 0 auto; }
+      .testimonial {
+        background: white; border-radius: 20px; padding: 2.5rem;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+        transition: transform 0.3s; display: flex; flex-direction: column;
+      }
+      .testimonial:hover { transform: translateY(-6px); }
+      .t-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+      .t-avatar {
+        width: 60px; height: 60px; border-radius: 50%; overflow: hidden;
+        border: 3px solid #e2e8f0; flex-shrink: 0;
+      }
+      .t-avatar img { width: 100%; height: 100%; object-fit: cover; }
+      .t-name { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1rem; color: #0a1628; }
+      .t-loc  { font-size: 0.82rem; color: #94a3b8; margin-top: 2px; }
+      .t-quote { font-size: 1rem; color: #475569; line-height: 1.8; font-style: italic; flex: 1; }
+
+      /* --- SECTION 5: FAQ --- */
+      .faq-section {
+        background: linear-gradient(160deg, #ffffff 0%, #f0f6ff 100%);
+        padding: 6rem 0;
+      }
+      .faq-grid { display: grid; grid-template-columns: 2fr 3fr; gap: 4rem; align-items: center; max-width: 1100px; margin: 0 auto; }
+      .faq-img img { width: 100%; max-width: 320px; margin: 0 auto; filter: drop-shadow(0 20px 50px rgba(0,113,206,0.3)); }
+      .faq-title { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 900; color: #0a1628; margin-bottom: 2rem; }
+      .faq-list { display: flex; flex-direction: column; gap: 0.75rem; }
+      .faq-item {
+        background: white; border: 1px solid #e2e8f0; border-radius: 16px;
+        overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        transition: box-shadow 0.2s;
+      }
+      .faq-item[open] { box-shadow: 0 6px 24px rgba(0,0,0,0.08); }
+      .faq-q {
+        padding: 1.25rem 1.5rem; font-family: 'Montserrat', sans-serif;
+        font-weight: 800; font-size: 1rem; color: #0a1628; cursor: pointer;
+        list-style: none; display: flex; justify-content: space-between; align-items: center;
+        gap: 1rem;
+      }
+      .faq-q::-webkit-details-marker { display: none; }
+      .faq-q::after { content: '+'; font-size: 1.4rem; font-weight: 400; color: #0071CE; flex-shrink: 0; transition: transform 0.2s; }
+      .faq-item[open] .faq-q::after { content: '−'; }
+      .faq-a { padding: 0 1.5rem 1.25rem; font-size: 0.97rem; color: #64748b; line-height: 1.75; }
+
+      /* --- SECTION 6: FOOTER CTA --- */
+      .footer-cta {
+        position: relative; overflow: hidden;
+        background: linear-gradient(135deg, #0d1b4b 0%, #1a1a6e 50%, #2d1b69 100%);
+        padding: 6rem 0; text-align: center; color: white;
+      }
+      .footer-cta-bg {
+        position: absolute; inset: 0; opacity: 0.12;
+      }
+      .footer-cta-bg img { width: 100%; height: 100%; object-fit: cover; }
+      .footer-cta-overlay { position: absolute; inset: 0; background: linear-gradient(to top, #0d1b4b 0%, transparent 70%); }
+      .footer-cta-content { position: relative; z-index: 2; }
+      .footer-cta-badge {
+        display: inline-flex; align-items: center; gap: 0.5rem;
+        background: rgba(255,194,32,0.18); border: 1px solid rgba(255,194,32,0.4);
+        border-radius: 999px; padding: 0.4rem 1.1rem;
+        font-size: 0.85rem; font-weight: 700; color: #FFC220; margin-bottom: 2rem;
+      }
+      .footer-cta h2 { font-size: clamp(2rem, 5vw, 4rem); font-weight: 900; margin-bottom: 1rem; line-height: 1.15; }
+      .footer-cta p  { font-size: 1.25rem; color: rgba(191,219,254,0.85); margin-bottom: 3rem; }
+
+      /* --- ACTUAL FOOTER --- */
+      .site-footer {
+        background: #050B14; padding: 2rem 0;
+        border-top: 1px solid rgba(255,255,255,0.07);
+      }
+      .site-footer-inner {
+        display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+        font-size: 0.85rem; color: #64748b;
+      }
+      .footer-links { display: flex; gap: 1.5rem; }
+      .footer-links a { color: #64748b; transition: color 0.2s; }
+      .footer-links a:hover { color: white; }
+
+      /* --- RESPONSIVE --- */
+      @media (max-width: 768px) {
+        .hero-grid, .how-grid, .cards-grid, .testimonials-grid, .faq-grid { grid-template-columns: 1fr; }
+        .how-grid .how-img-wrap { order: -1; }
+        .how-grid .reveal-steps { order: 1; }
+        .value-hero-img { aspect-ratio: 16/9; }
+        .hero-title { font-size: 2rem; }
+        .hero-section, .how-section, .value-section, .proof-section, .faq-section, .footer-cta { padding: 3.5rem 0; }
+        .faq-img { display: none; }
+        .faq-grid { grid-template-columns: 1fr; }
+      }
+      @media (max-width: 480px) {
+        .footer-cta h2 { font-size: 1.8rem; }
+        .btn-yellow { font-size: 1rem; padding: 0.9rem 1.5rem; }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- STICKY HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="logo">
+            <div class="logo-icon">🎁</div>
+            PremiumRewards
+          </div>
+          <a href="https://singingfiles.com/show.php?l=0&u=2527702&id=74764" target="_blank" rel="noopener" class="btn btn-sm">Check Eligibility</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- SECTION 1: HERO -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="reveal-hidden">
+              <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                Limited Time Promotional Offer
+              </div>
+              <h1 class="hero-title">
+                Get Your Opportunity to Claim a
+                <span>$500 Walmart Gift Card!</span>
+              </h1>
+              <p class="hero-subtitle">
+                Maximize Your Shopping Budget. Stock up your pantry, refresh your home decor, or grab the latest tech accessories completely on us. Take a brief moment to verify your eligibility and unlock your premium retail reward today.
+              </p>
+              <a href="https://singingfiles.com/show.php?l=0&u=2527702&id=74764" target="_blank" rel="noopener" class="btn btn-primary">
+                👉 CLAIM YOUR $500 REWARD NOW
+              </a>
+              <div class="hero-trust">
+                <div class="hero-trust-item"><span class="icon-green">✔</span> Secure Process</div>
+                <div class="hero-trust-item"><span class="icon-blue">✔</span> Verified Partner</div>
+                <div class="hero-trust-item"><span class="icon-green">✔</span> No Credit Card</div>
+              </div>
+            </div>
+            <div class="reveal-hidden" style="animation-delay:0.2s">
+              <div class="hero-img-wrap">
+                <img src="images/hero.jpg" alt="Family grocery shopping" loading="eager" />
+                <div class="hero-img-overlay"></div>
+                <div class="hero-img-badge">YOUR $500 REWARD AWAITS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: HOW IT WORKS -->
+      <section class="how-section">
+        <div class="how-blob-1"></div>
+        <div class="how-blob-2"></div>
+        <div class="container">
+          <div class="reveal-hidden" style="text-align:center;max-width:720px;margin:0 auto 3.5rem">
+            <h2 class="how-title">Get Your Shopping Credit in 3 Simple Steps</h2>
+            <p class="how-subtitle">Follow our transparent, secure verification process to unlock your premium digital reward.</p>
+          </div>
+          <div class="how-grid">
+            <div class="steps reveal-steps">
+              <div class="step reveal-hidden" style="animation-delay:0.1s">
+                <div class="step-line-wrap">
+                  <div class="step-num">1</div>
+                  <div class="step-connector"></div>
+                </div>
+                <div class="step-content">
+                  <h3>Check Eligibility</h3>
+                  <p>Click any button to securely navigate to our official reward verification portal.</p>
+                </div>
+              </div>
+              <div class="step reveal-hidden" style="animation-delay:0.2s">
+                <div class="step-line-wrap">
+                  <div class="step-num">2</div>
+                  <div class="step-connector"></div>
+                </div>
+                <div class="step-content">
+                  <h3>Complete Consumer Survey</h3>
+                  <p>Enter your verified email or zip code and answer a few brief consumer feedback questions.</p>
+                </div>
+              </div>
+              <div class="step reveal-hidden" style="animation-delay:0.3s">
+                <div class="step-line-wrap">
+                  <div class="step-num">3</div>
+                </div>
+                <div class="step-content">
+                  <h3>Access Your Balance</h3>
+                  <p>Once you complete the required sponsor promotional tasks, your $500 digital code will be prepared for delivery.</p>
+                </div>
+              </div>
+            </div>
+            <div class="how-img-wrap reveal-hidden" style="animation-delay:0.2s">
+              <img src="images/how-it-works.jpg" alt="3 steps phone notification" loading="lazy" class="float-anim" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: VALUE PROPOSITION -->
+      <section class="value-section">
+        <div class="container">
+          <div class="section-header reveal-hidden">
+            <h2 class="section-title">What Can You Spend Your $500 On?</h2>
+            <p class="section-subtitle">Your digital code acts like cash at checkout — giving you the ultimate freedom to choose exactly what you need.</p>
+          </div>
+          <div class="cards-grid">
+            <div class="card reveal-hidden" style="animation-delay:0.1s">
+              <div class="card-icon">🛒</div>
+              <div>
+                <h3>Months of Groceries</h3>
+                <p>Cover household grocery bills with premium fresh produce, family snacks, and daily pantry staples.</p>
+              </div>
+            </div>
+            <div class="card reveal-hidden" style="animation-delay:0.2s">
+              <div class="card-icon">🏠</div>
+              <div>
+                <h3>Home Upgrades</h3>
+                <p>Modern small appliances, cozy bedding, or stylish home accents for every room.</p>
+              </div>
+            </div>
+            <div class="card reveal-hidden" style="animation-delay:0.3s">
+              <div class="card-icon">📱</div>
+              <div>
+                <h3>Tech &amp; Entertainment</h3>
+                <p>Wireless headphones, smart home gadgets, video games, or streaming accessories.</p>
+              </div>
+            </div>
+            <div class="card reveal-hidden" style="animation-delay:0.4s">
+              <div class="card-icon">🔒</div>
+              <div>
+                <h3>100% Secure Access</h3>
+                <p>No hidden fees, no credit card required, completely transparent verification process.</p>
+              </div>
+            </div>
+          </div>
+          <div class="value-hero-img reveal-hidden" style="animation-delay:0.4s">
+            <img src="images/value-prop.jpg" alt="Grocery and tech flat lay" loading="lazy" />
+            <div class="value-hero-img-overlay"></div>
+            <div class="value-hero-img-text">The choice is entirely yours.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: SOCIAL PROOF -->
+      <section class="proof-section">
+        <div class="container">
+          <div class="section-header reveal-hidden">
+            <h2 class="section-title">Real Feedback From Successful Participants</h2>
+            <div class="stars">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <p class="section-subtitle">Join thousands of everyday shoppers who took a few minutes to claim their reward.</p>
+          </div>
+          <div class="testimonials-grid">
+            <div class="testimonial reveal-hidden" style="animation-delay:0.1s">
+              <div class="t-header">
+                <div class="t-avatar"><img src="images/profile-1.jpg" alt="Brian M." loading="lazy" /></div>
+                <div>
+                  <div class="t-name">Brian M.</div>
+                  <div class="t-loc">Columbus, Ohio</div>
+                </div>
+              </div>
+              <blockquote class="t-quote">
+                "I usually skip these kinds of promotions, but I had a few minutes to spare while waiting for my coffee. Following the sponsor requirements took a little attention to detail, but the $500 digital code came through to my inbox. It completely paid for my backyard grill tools!"
+              </blockquote>
+            </div>
+            <div class="testimonial reveal-hidden" style="animation-delay:0.2s">
+              <div class="t-header">
+                <div class="t-avatar"><img src="images/profile-2.jpg" alt="Elena R." loading="lazy" /></div>
+                <div>
+                  <div class="t-name">Elena R.</div>
+                  <div class="t-loc">Charlotte, North Carolina</div>
+                </div>
+              </div>
+              <blockquote class="t-quote">
+                "As a busy mom, saving money on the monthly grocery run is a massive win. This program is totally straightforward if you just read the steps properly. Super happy with my experience!"
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: FAQ -->
+      <section class="faq-section">
+        <div class="container">
+          <div class="faq-grid">
+            <div class="faq-img reveal-hidden">
+              <img src="images/faq-shield.jpg" alt="Security shield" loading="lazy" class="pulse-soft-anim" />
+            </div>
+            <div class="reveal-hidden" style="animation-delay:0.15s">
+              <h2 class="faq-title">Frequently Asked Questions</h2>
+              <div class="faq-list">
+                <details class="faq-item">
+                  <summary class="faq-q">Is checking my initial eligibility free?</summary>
+                  <div class="faq-a">Yes! It is completely free to enter your email and check if the promotional spots are open in your area. To fully claim the $500 reward, you must fulfill the specified brand partner offers.</div>
+                </details>
+                <details class="faq-item">
+                  <summary class="faq-q">Can this gift card be used online?</summary>
+                  <div class="faq-a">Yes, absolutely. Your digital reward code can be used seamlessly for online checkouts on the official retail website as well as scanned inside physical retail stores.</div>
+                </details>
+                <details class="faq-item">
+                  <summary class="faq-q">How long do I have to complete the required steps?</summary>
+                  <div class="faq-a">Because daily allocations are limited by our sponsors, we recommend completing the quick feedback survey and partner tasks within the same session to lock in your spot.</div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: FOOTER CTA -->
+      <section class="footer-cta">
+        <div class="footer-cta-bg"><img src="images/footer-bg.jpg" alt="" loading="lazy" /></div>
+        <div class="footer-cta-overlay"></div>
+        <div class="container footer-cta-content">
+          <div class="reveal-hidden">
+            <div class="footer-cta-badge">⚡ Limited Daily Spots Available</div>
+            <h2>Daily Spots Are Filling Up Fast</h2>
+            <p>Secure Yours Today Before Daily Allocations Run Out!</p>
+            <a href="https://singingfiles.com/show.php?l=0&u=2527702&id=74764" target="_blank" rel="noopener" class="btn btn-yellow">
+              👉 START MY ELIGIBILITY CHECK
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer-inner">
+          <p>© 2026 PremiumRewards. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="https://singingfiles.com/show.php?l=0&u=2527702&id=74764" target="_blank" rel="noopener">Privacy Policy</a>
+            <a href="https://singingfiles.com/show.php?l=0&u=2527702&id=74764" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+            <a href="https://singingfiles.com/show.php?l=0&u=2527702&id=74764" target="_blank" rel="noopener">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Intersection Observer for scroll-reveal animations
+      (function(){
+        var els = document.querySelectorAll('.reveal-hidden');
+        if(!els.length) return;
+        var io = new IntersectionObserver(function(entries){
+          entries.forEach(function(e){
+            if(e.isIntersecting){
+              e.target.classList.add('reveal-visible');
+              io.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+        els.forEach(function(el){ io.observe(el); });
+      })();
+    </script>
+
+  </body>
+  </html>
